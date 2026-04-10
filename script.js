@@ -13,13 +13,25 @@ const navBadge = document.getElementById('nav-badge-experience');
 const jobsContainer = document.getElementById('jobs-container');
 
 // Base de dados com classificação por nível
+// Base de dados expandida com classificação por nível
 const listaVagas = [
-    { titulo: "Front-end Júnior", empresa: "Tech Solutions", local: "Remoto", nivel: "Iniciante" },
+    // --- VAGAS PARA INICIANTES ---
+    { titulo: "Front-end Júnior (React)", empresa: "Tech Solutions", local: "Remoto", nivel: "Iniciante" },
+    { titulo: "Estágio em Desenvolvimento Web", empresa: "StartUp Inovação", local: "Rio de Janeiro, RJ", nivel: "Iniciante" },
+    { titulo: "Desenvolvedor Mobile Trainee", empresa: "App Factory", local: "Belo Horizonte, MG", nivel: "Iniciante" },
+    { titulo: "React Developer Júnior", empresa: "Webflow Corp", local: "Curitiba, PR", nivel: "Iniciante" },
+    { titulo: "Suporte Técnico Nível 1", empresa: "Global Infra", local: "São Paulo, SP", nivel: "Iniciante" },
+    { titulo: "Auxiliar de Programação", empresa: "Soft House", local: "Remoto", nivel: "Iniciante" },
+    { titulo: "QA Tester Júnior", empresa: "Bug Hunters", local: "Florianópolis, SC", nivel: "Iniciante" },
+
+    // --- VAGAS PARA EXPERIENTES ---
     { titulo: "Software Engineer Sênior", empresa: "Global Fintech", local: "São Paulo, SP", nivel: "Experiente" },
-    { titulo: "Estágio em Web Development", empresa: "StartUp", local: "Rio de Janeiro", nivel: "Iniciante" },
-    { titulo: "Full Stack Pleno", empresa: "E-commerce Pro", local: "Remoto", nivel: "Experiente" },
-    { titulo: "React Developer Júnior", empresa: "Webflow Corp", local: "Curitiba", nivel: "Iniciante" },
-    { titulo: "Arquiteto de Sistemas", empresa: "Big Data Co", local: "Remoto", nivel: "Experiente" }
+    { titulo: "Full Stack Pleno (Node/React)", empresa: "E-commerce Pro", local: "Remoto", nivel: "Experiente" },
+    { titulo: "Arquiteto de Sistemas Cloud", empresa: "Big Data Co", local: "Remoto", nivel: "Experiente" },
+    { titulo: "Tech Lead", empresa: "Unicórnio Tech", local: "São Paulo, SP", nivel: "Experiente" },
+    { titulo: "SRE / DevOps Engineer Pleno", empresa: "Cloud Ops", local: "Remoto", nivel: "Experiente" },
+    { titulo: "Desenvolvedor Backend Sênior (Java)", empresa: "Banco Digital", local: "Brasília, DF", nivel: "Experiente" },
+    { titulo: "Especialista em Segurança da Informação", empresa: "Cyber Shield", local: "Remoto", nivel: "Experiente" }
 ];
 
 window.onload = () => {
