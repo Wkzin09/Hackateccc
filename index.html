@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConnect | Vagas de Emprego</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="login-overlay" class="overlay">
+        <div class="login-box">
+            <div class="logo-box">D</div>
+            <h2>Entrar no DevConnect</h2>
+            <p>Acesse seu painel de vagas</p>
+            
+            <div class="input-group">
+                <label>E-mail</label>
+                <input type="email" id="email-input" placeholder="exemplo@email.com">
+                
+                <label>Senha</label>
+                <input type="password" id="password-input" placeholder="No mínimo 6 caracteres">
+                
+                <label>Usuário do GitHub</label>
+                <input type="text" id="username-input" placeholder="Ex: seu-usuario-github">
+
+                <label>Nível de Experiência</label>
+                <select id="experience-level" class="styled-select">
+                    <option value="" disabled selected>Selecione seu nível...</option>
+                    <option value="Iniciante">Iniciante (Estudante / Júnior)</option>
+                    <option value="Experiente">Experiente (Pleno / Sênior)</option>
+                </select>
+            </div>
+
+            <button id="btn-entrar">Conectar e Entrar</button>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <nav class="navbar">
+            <div class="container nav-content">
+                <div class="logo">
+                    <span class="logo-box">D</span>
+                    <span class="logo-text">DevConnect</span>
+                </div>
+                
+                <div class="user-nav-info">
+                    <div class="user-details">
+                        <span id="nav-display-name">Nome Usuario</span>
+                        <span id="nav-badge-experience" class="badge-mini">Nível</span>
+                    </div>
+                    <img id="nav-profile-img" src="" alt="Avatar" class="avatar-mini">
+                    <button id="btn-sair" class="btn-sair" title="Sair"><i class="fas fa-sign-out-alt"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container main-layout">
+            <section class="content full-width">
+                <div class="jobs-header">
+                    <h2>Vagas recomendadas para você</h2>
+                    <p>Com base no seu perfil do GitHub e nível de experiência.</p>
+                </div>
+                
+                <div id="jobs-container" class="repo-grid">
+                    </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
